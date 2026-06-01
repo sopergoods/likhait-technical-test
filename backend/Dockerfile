@@ -9,8 +9,8 @@ WORKDIR /rails
 
 # Install base packages
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential ca-certificates default-mysql-client default-libmysqlclient-dev git && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
+    apt-get install -y build-essential libyaml-dev pkg-config default-mysql-client default-libmysqlclient-dev && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
