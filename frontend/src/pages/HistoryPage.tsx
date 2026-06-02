@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { getExpenses, createExpense } from "../services/api";
 import { Expense, ExpenseFormData } from "../types";
@@ -13,6 +14,7 @@ const HistoryPage: React.FC = () => {
   const [expenses, setExpenses] = useState<Expense[]>([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   // Get year and month from URL params, default to current date if not provided
   const getInitialYearMonth = () => {
@@ -82,8 +84,18 @@ const HistoryPage: React.FC = () => {
     }
   };
 
+  // Search filter feature
+  const filteredExpenses = expenses.filter((expense) => {
+    const search = searchTerm.toLowerCase();
+
+    return (
+      expense.description.toLowerCase().includes(search) ||
+      expense.category.toLowerCase().includes(search)
+    );
+  });
+
   // Calculate category breakdown
-  const categoryData = expenses.reduce(
+  const categoryData = filteredExpenses.reduce(
     (acc, expense) => {
       const category = expense.category || "Uncategorized";
       if (!acc[category]) {
@@ -153,6 +165,22 @@ const HistoryPage: React.FC = () => {
         </Button>
       </div>
 
+      <div style={{ marginTop: "24px", marginBottom: "16px" }}>
+        <input
+          type="text"
+          placeholder="Search expenses..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          style={{
+            width: "100%",
+            padding: "12px",
+            fontSize: "16px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+          }}
+        />
+      </div>
+
       <MonthNavigation
         currentMonth={selectedMonth}
         currentYear={selectedYear}
@@ -171,7 +199,7 @@ const HistoryPage: React.FC = () => {
             />
             <div style={{ marginTop: "32px" }}>
               <CalendarExpenseTable
-                expenses={expenses}
+                expenses={filteredExpenses}
                 onExpenseUpdated={fetchExpenses}
               />
             </div>
@@ -194,3 +222,4 @@ const HistoryPage: React.FC = () => {
 };
 
 export default HistoryPage;
+

@@ -24,18 +24,18 @@ checking for SSL_get1_peer_certificate() in openssl/ssl.h... yes
 creating Makefile
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-bzwwj5 sitelibdir\=./.gem.20260601-7-bzwwj5 clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-rvhzi1 sitelibdir\=./.gem.20260602-10-rvhzi1 clean
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-bzwwj5 sitelibdir\=./.gem.20260601-7-bzwwj5
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-rvhzi1 sitelibdir\=./.gem.20260602-10-rvhzi1
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.so
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-bzwwj5 sitelibdir\=./.gem.20260601-7-bzwwj5 install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20260601-7-bzwwj5/puma
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-rvhzi1 sitelibdir\=./.gem.20260602-10-rvhzi1 install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20260602-10-rvhzi1/puma
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-bzwwj5 sitelibdir\=./.gem.20260601-7-bzwwj5 clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-rvhzi1 sitelibdir\=./.gem.20260602-10-rvhzi1 clean

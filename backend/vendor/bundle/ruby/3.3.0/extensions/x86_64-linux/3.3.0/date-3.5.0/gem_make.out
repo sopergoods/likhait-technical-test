@@ -6,10 +6,10 @@ checking for altzone in time.h with  -Werror... no
 creating Makefile
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/date-3.5.0/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-txlpmt sitelibdir\=./.gem.20260601-7-txlpmt clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-x9cjop sitelibdir\=./.gem.20260602-10-x9cjop clean
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/date-3.5.0/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-txlpmt sitelibdir\=./.gem.20260601-7-txlpmt
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-x9cjop sitelibdir\=./.gem.20260602-10-x9cjop
 compiling date_core.c
 compiling date_parse.c
 compiling date_strftime.c
@@ -17,8 +17,8 @@ compiling date_strptime.c
 linking shared-object date_core.so
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/date-3.5.0/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-txlpmt sitelibdir\=./.gem.20260601-7-txlpmt install
-/usr/bin/install -c -m 0755 date_core.so ./.gem.20260601-7-txlpmt
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-x9cjop sitelibdir\=./.gem.20260602-10-x9cjop install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20260602-10-x9cjop
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/date-3.5.0/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-txlpmt sitelibdir\=./.gem.20260601-7-txlpmt clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-x9cjop sitelibdir\=./.gem.20260602-10-x9cjop clean

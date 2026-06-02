@@ -3,17 +3,17 @@ current directory: /rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
 creating Makefile
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-4chh2r sitelibdir\=./.gem.20260601-7-4chh2r clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-r3pvt8 sitelibdir\=./.gem.20260602-10-r3pvt8 clean
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-4chh2r sitelibdir\=./.gem.20260601-7-4chh2r
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-r3pvt8 sitelibdir\=./.gem.20260602-10-r3pvt8
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.so
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-4chh2r sitelibdir\=./.gem.20260601-7-4chh2r install
-/usr/bin/install -c -m 0755 debug.so ./.gem.20260601-7-4chh2r/debug
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-r3pvt8 sitelibdir\=./.gem.20260602-10-r3pvt8 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20260602-10-r3pvt8/debug
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-4chh2r sitelibdir\=./.gem.20260601-7-4chh2r clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-r3pvt8 sitelibdir\=./.gem.20260602-10-r3pvt8 clean

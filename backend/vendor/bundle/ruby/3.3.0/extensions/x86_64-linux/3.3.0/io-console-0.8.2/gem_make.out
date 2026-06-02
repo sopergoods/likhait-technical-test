@@ -16,16 +16,16 @@ checking for ttyname_r()... yes
 creating Makefile
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-st004r sitelibdir\=./.gem.20260601-7-st004r clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-4zjpj9 sitelibdir\=./.gem.20260602-10-4zjpj9 clean
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-st004r sitelibdir\=./.gem.20260601-7-st004r
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-4zjpj9 sitelibdir\=./.gem.20260602-10-4zjpj9
 compiling console.c
 linking shared-object io/console.so
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-st004r sitelibdir\=./.gem.20260601-7-st004r install
-/usr/bin/install -c -m 0755 console.so ./.gem.20260601-7-st004r/io
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-4zjpj9 sitelibdir\=./.gem.20260602-10-4zjpj9 install
+/usr/bin/install -c -m 0755 console.so ./.gem.20260602-10-4zjpj9/io
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/io-console-0.8.2/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-st004r sitelibdir\=./.gem.20260601-7-st004r clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-4zjpj9 sitelibdir\=./.gem.20260602-10-4zjpj9 clean

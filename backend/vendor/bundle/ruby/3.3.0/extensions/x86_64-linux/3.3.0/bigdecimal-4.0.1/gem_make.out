@@ -22,17 +22,17 @@ checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-qdqjna sitelibdir\=./.gem.20260601-7-qdqjna clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-5ipd0z sitelibdir\=./.gem.20260602-10-5ipd0z clean
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-qdqjna sitelibdir\=./.gem.20260601-7-qdqjna
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-5ipd0z sitelibdir\=./.gem.20260602-10-5ipd0z
 compiling bigdecimal.c
 compiling missing.c
 linking shared-object bigdecimal.so
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-qdqjna sitelibdir\=./.gem.20260601-7-qdqjna install
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20260601-7-qdqjna
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-5ipd0z sitelibdir\=./.gem.20260602-10-5ipd0z install
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20260602-10-5ipd0z
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-qdqjna sitelibdir\=./.gem.20260601-7-qdqjna clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-5ipd0z sitelibdir\=./.gem.20260602-10-5ipd0z clean

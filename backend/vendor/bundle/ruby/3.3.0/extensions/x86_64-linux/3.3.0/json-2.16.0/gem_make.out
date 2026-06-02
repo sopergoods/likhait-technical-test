@@ -11,16 +11,16 @@ checking for cpuid.h... yes
 creating Makefile
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/json-2.16.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-ku15py sitelibdir\=./.gem.20260601-7-ku15py clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-kt8sv0 sitelibdir\=./.gem.20260602-10-kt8sv0 clean
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/json-2.16.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-ku15py sitelibdir\=./.gem.20260601-7-ku15py
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-kt8sv0 sitelibdir\=./.gem.20260602-10-kt8sv0
 compiling parser.c
 linking shared-object json/ext/parser.so
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/json-2.16.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-ku15py sitelibdir\=./.gem.20260601-7-ku15py install
-/usr/bin/install -c -m 0755 parser.so ./.gem.20260601-7-ku15py/json/ext
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-kt8sv0 sitelibdir\=./.gem.20260602-10-kt8sv0 install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20260602-10-kt8sv0/json/ext
 
 current directory: /rails/vendor/bundle/ruby/3.3.0/gems/json-2.16.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260601-7-ku15py sitelibdir\=./.gem.20260601-7-ku15py clean
+make DESTDIR\= sitearchdir\=./.gem.20260602-10-kt8sv0 sitelibdir\=./.gem.20260602-10-kt8sv0 clean
