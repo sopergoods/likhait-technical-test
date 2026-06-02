@@ -1,6 +1,6 @@
 class Api::ExpensesController < ApplicationController
   def index
-    expenses = Expense.includes(:category).order(created_at: :desc)
+    expenses = Expense.includes(:category).order(expense_date: :desc)
 
     if params[:year].present? && params[:month].present?
       year = params[:year].to_i
@@ -9,7 +9,7 @@ class Api::ExpensesController < ApplicationController
       start_date = Date.new(year, month, 1)
       end_date = start_date.end_of_month
 
-      expenses = expenses.where(created_at: start_date.beginning_of_day..end_date.end_of_day)
+      expenses = expenses.where(expense_date: start_date..end_date)
     end
 
     render json: expenses.map { |expense| format_expense(expense) }
@@ -20,9 +20,10 @@ class Api::ExpensesController < ApplicationController
 
     if expense.save
       render json: format_expense(expense), status: :created
-    else
-      render json: { errors: expense.errors.full_messages }, status: :unprocessable_entity
-    end
+   else
+  Rails.logger.error("Expense create errors: #{expense.errors.full_messages}")
+  render json: { errors: expense.errors.full_messages }, status: :unprocessable_entity
+end
   end
 
   def update
@@ -31,8 +32,9 @@ class Api::ExpensesController < ApplicationController
     if expense.update(expense_params)
       render json: format_expense(expense)
     else
-      render json: { errors: expense.errors.full_messages }, status: :unprocessable_entity
-    end
+  Rails.logger.error("Expense create errors: #{expense.errors.full_messages}")
+  render json: { errors: expense.errors.full_messages }, status: :unprocessable_entity
+end
   end
 
   def destroy
@@ -44,7 +46,7 @@ class Api::ExpensesController < ApplicationController
   private
 
   def expense_params
-    params.require(:expense).permit(:description, :amount, :category_id, :date)
+    params.require(:expense).permit(:description, :amount, :category_id, :payer_name, :expense_date)
   end
 
   def format_expense(expense)
@@ -53,7 +55,8 @@ class Api::ExpensesController < ApplicationController
       description: expense.description,
       amount: expense.amount.to_f,
       category: expense.category.name,
-      date: expense.date.to_s,
+      expense_date: expense.expense_date.to_s,
+      date: expense.expense_date.to_s,
       created_at: expense.created_at,
       updated_at: expense.updated_at
     }

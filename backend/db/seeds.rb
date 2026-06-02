@@ -141,14 +141,15 @@ while current_date <= end_date
       amount += rand(0..99) / 100.0
 
       # Create the expense with created_at set to the date
-      Expense.create!(
-        description: template[:description],
-        amount: amount,
-        category: category,
-        date: current_date,
-        created_at: current_date,
-        updated_at: current_date
-      )
+     Expense.create!(
+      description: template[:description],
+      amount: amount,
+      category: category,
+      payer_name: "System User",
+      expense_date: current_date,
+      created_at: current_date,
+      updated_at: current_date
+)
 
       expense_count += 1
 
